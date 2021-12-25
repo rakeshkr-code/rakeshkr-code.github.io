@@ -30,4 +30,4 @@
 
 ## Featured Certificate
 
-![](/images/Screenshot_39.png)
+![](/images/data-type2.png)
