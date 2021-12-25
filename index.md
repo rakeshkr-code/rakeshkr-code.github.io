@@ -7,7 +7,7 @@
 - IIT Madras
 - Udemy
 - Coursera
-- - BU
+- BU
 
 ### [Project 1: Housing Price Calculator](https://www.instagram.com/rkmandal149/)
 
