@@ -80,7 +80,7 @@ a{
 
 
 /* ============ About Section ============ */
-#aboutsec{
+#aboutsec, #projectsec{
     /* padding-top: 4em; */
     border: 1px solid var(--borderColor);
     margin: 1rem 2rem;
@@ -115,6 +115,17 @@ a{
 /* ============ Project Section ============ */
 #projectsec{
     /* padding-top: 4em; */
+}
+.card-body {
+    min-height: 250px;
+    min-width: 250px;
+    max-height: 300px;
+    max-width: 300px;
+    margin-right: 5px;
+}
+.cards-container{
+    margin: auto 5rem;
+    overflow-y:scroll;
 }
 
 
@@ -234,6 +245,18 @@ h6 {font-size: 16px;}
     }
     /* ============ About Section ============ */
     #aboutsec{
+        /* padding-top: 4em; */
+        border: 1px solid var(--borderColor);
+        margin: auto;
+        padding: 1rem;
+    }
+    #projectsec{
+        /* padding-top: 4em; */
+        border: 1px solid var(--borderColor);
+        margin: auto;
+        padding: 0rem;
+    }
+    #aboutsec{
         /* padding-top: 15vh; */
     }
 
@@ -260,6 +283,16 @@ h6 {font-size: 16px;}
     #sub-aboutsec #two{
         width: auto;
         /* padding-left: auto 2rem; */
+    }
+
+    .card-body {
+        min-height: 300px;
+        min-width: 300px;
+        /* margin-right: 5px; */
+    }
+    .cards-container{
+        margin: auto;
+        overflow-y:scroll;
     }
 
 }
