@@ -1,16 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rakesh Kr Mandal</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- =========== Favicon =========== -->
+
+    <!-- =========== Fonts ============ -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- ========== Bootstrap CSS File & Icons ========== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+
+    <!-- ========== My Custom CSS File =========== -->
     <link rel="stylesheet" href="default.css">
+    
 </head>
 <body>
-    <section class="s1">
+    <nav id="navbar" class="navbar fixed-top main-nav">
+        <h4><a href="#">Rakesh Kr Mandal</a></h4>
+        <ul class="nav nav-pills" id="navlist">
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutsec">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projectsec">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contactsec">CONTACT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">RESUME</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="main-div" class="container" data-bs-spy="scroll" data-bs-target=".navbar" data-offset="50" data-bs-smooth-scroll="true" >
+
+        <div id="intro">
+            <div id="sub-intro">
+                <h2>Hi, Rakesh Kr Mandal Here </h2>
+                <h6>I'm a Web Developer, Full Stack Developer, & Data Science Enthusiast</h6>
+                <img src="./images/profile_pic.jpg" alt="my-photo" id="profile-photo" class="shadow mt-3">
+            </div>
+            
+        </div>
+        
+        <div id="aboutsec" class="shadow-sm">
+            <div>
+                <h2 class="secheading">About</h2>
+            </div>
+            <div id="sub-aboutsec">
+                <div id="one">
+                    <p><b>Name: </b> Rakkesh Kumar Mandal</p>
+                    <p><b>Academics: </b></p>
+                    <ul>
+                        <li>Studying BSc Programming & Data Science, IIT-Madras, (2020-Present)</li>
+                        <li>Studied BSc Physics, Sambhunath College, Under Burdwan University (2017-2020)</li>
+                    </ul>
+                    <div class="make-flex">
+                        <a href="https://github.com/rakeshkr-code/"> <i class="bi bi-github icons"> </i></a> &nbsp; &nbsp;
+                        <a href="https://www.linkedin.com/in/rakesh-kr-mandal-50610a1a5/"> <i class="bi bi-linkedin icons"></i> </a> &nbsp; &nbsp;
+                        <a href="https://www.instagram.com/rkmandal149/?hl=en"> <i class="bi bi-instagram icons"></i> </a>
+
+                    </div> <hr>
+                    <h5 class="mt-2">Have Work Experience With: </h5>
+                    <div class="tech-stack mb-2">
+                        <img class="logo-img" src="./images/python_logo.svg" alt="Python">
+                        <img class="logo-img" src="./images/html5_logo.svg" alt="HTML5">
+                        <img class="logo-img" src="./images/css3_logo.svg" alt="CSS3">
+                        <img class="logo-img" src="./images/js_logo.svg" alt="JS">
+                        <img class="logo-img" src="./images/vuejs_logo.svg" alt="VueJS">
+                        <img class="logo-img" src="./images/flask_logo.svg" alt="Flask">
+                        <img class="logo-img" src="./images/postgresql_logo.svg" alt="PostGreSQL">
+                        <img class="logo-img" src="./images/git_logo.svg" alt="Git">
+                        <img class="logo-img" src="./images/github_logo.svg" alt="GitHub">
+
+                    </div>
+                </div> &nbsp; &nbsp;
+                <div id="two">
+                    <figure>
+                        <blockquote cite="https://www.huxley.net/bnw/four.html">
+                            <p>Words can be like X-rays, if you use them properly—they will go through anything. You read and you’re pierced.</p>
+                        </blockquote>
+                        <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam molestiae, quis reprehenderit quidem, obcaecati necessitatibus autem officiis, suscipit laboriosam fuga ullam odit deleniti quia officia? Ullam iure voluptatibus odit ad.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat nostrum eum voluptates facere, inventore reiciendis impedit, tenetur voluptatem autem, architecto neque! Dolores hic eum enim perspiciatis quae accusamus earum!</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="projectsec">
+            <h2>Projects</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi eaque voluptatibus sed dignissimos, iste totam, officia veritatis quam minima distinctio ab non aliquid nobis. Officiis cum voluptatibus animi minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi eaque voluptatibus sed dignissimos, iste totam, officia veritatis quam minima distinctio ab non aliquid nobis. Officiis cum voluptatibus animi minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi eaque voluptatibus sed dignissimos, iste totam, officia veritatis quam minima distinctio ab non aliquid nobis. Officiis cum voluptatibus animi minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi eaque voluptatibus sed dignissimos, iste totam, officia veritatis quam minima distinctio ab non aliquid nobis. Officiis cum voluptatibus animi minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi eaque voluptatibus sed dignissimos, iste totam, officia veritatis quam minima distinctio ab non aliquid nobis. Officiis cum voluptatibus animi minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi eaque voluptatibus sed dignissimos, iste totam, officia veritatis quam minima distinctio ab non aliquid nobis. Officiis cum voluptatibus animi minus.</p>
+
+        </div>
+
+
+        <div id="contactsec">
+            <h2>Contact Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi eaque voluptatibus sed dignissimos, iste totam, officia veritatis quam minima distinctio ab non aliquid nobis. Officiis cum voluptatibus animi minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi eaque voluptatibus sed dignissimos, iste totam, officia veritatis quam minima distinctio ab non aliquid nobis. Officiis cum voluptatibus animi minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi eaque voluptatibus sed dignissimos, iste totam, officia veritatis quam minima distinctio ab non aliquid nobis. Officiis cum voluptatibus animi minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi eaque voluptatibus sed dignissimos, iste totam, officia veritatis quam minima distinctio ab non aliquid nobis. Officiis cum voluptatibus animi minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi eaque voluptatibus sed dignissimos, iste totam, officia veritatis quam minima distinctio ab non aliquid nobis. Officiis cum voluptatibus animi minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi eaque voluptatibus sed dignissimos, iste totam, officia veritatis quam minima distinctio ab non aliquid nobis. Officiis cum voluptatibus animi minus.</p>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <!-- <section class="s1">
         <div class="main-container">
             <div class="greeting-wrapper">
                 <h1>Hi, I'm Rakesh Kr Mandal</h1>
@@ -48,6 +163,11 @@
         <div class="main-container">
             Contact
         </div>
-    </section>
+    </section> -->
+<!-- ======= BOOTSTRAP JS FILE ======= -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ======= MY CUSTOM JS FILE ======= -->
+
 </body>
 </html>

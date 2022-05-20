@@ -1,6 +1,6 @@
 :root{
     --mainColor: #eaeaea;
-    --secondaryColor: #fff;
+    --secondaryColor: #34373a;
 
     --borderColor: #c1c1c1;
 
@@ -8,7 +8,127 @@
     --secondaryText: #4b5156;
 }
 
-html, body {
+body{
+    position: relative;
+    background: #ecf0f3;
+}
+
+/* ============== NavBar ============== */
+.main-nav{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 0.7em;
+    /* height: 15vh; */
+    height: 5em;
+    background-color: var(--secondaryColor);
+    /* margin: 0; */
+}
+#navlist{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+#navlist li{
+    padding: 0.3em;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+#navbar a, #navlist a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* ========== Main Div View Compatibility ========== */
+#main-div{
+    /* margin-top: 15vh; */
+    margin-top: 5em;
+}
+/* #intro{
+    height: 75vh;
+} */
+
+/* ============ Intro Section ============ */
+#intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sub-intro{
+    margin: 5vh;
+    text-align: center;
+}
+#profile-photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    /* margin-top: 5vh; */
+}
+.icons{
+    color: #000;
+}
+
+
+/* ======= Common to All Sections ========= */
+.secheading{
+    text-align: center;
+    text-decoration: underline navy;
+}
+
+
+/* ============ About Section ============ */
+#aboutsec{
+    /* padding-top: 4em; */
+    border: 1px solid var(--borderColor);
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+}
+#sub-aboutsec{ /*, .make-flex{*/
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    justify-content: space-around;
+    align-items: center;
+}
+.make-flex{
+    display: flex;
+    justify-content: center;
+}
+.logo-img{
+    height: 50px;
+    width: 50px;
+}
+#sub-aboutsec #one{
+    width: 40%;
+    /* padding-right: auto 2rem; */
+}
+#sub-aboutsec #two{
+    width: 40%;
+    /* padding-left: auto 2rem; */
+}
+
+
+
+/* ============ Project Section ============ */
+#projectsec{
+    /* padding-top: 4em; */
+}
+
+
+/* ============ Contact Section ============ */
+#contactsec{
+    /* padding-top: 4em; */
+}
+
+
+
+
+
+
+/* html, body {
     padding: 0;
     margin: 0;
 }
@@ -56,7 +176,6 @@ h6 {font-size: 16px;}
 
 .greeting-wrapper{
     display: grid;
-    /* text-align: center; */
     justify-content: center;
     align-content: center;
     border: 2px dashed lightcoral;
@@ -93,10 +212,54 @@ h6 {font-size: 16px;}
 .right-column{
     grid-area: right-column;
     border: 1px dashed lightcoral;
-}
+} */
 
-@media screen and (max-width: 1200px) {
-    .main-container {
+@media screen and (max-width: 500px) {
+    /* .main-container {
         width: 95%;
+    } */
+    .main-nav{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        font-size: 0.7em;
+        height: 15vh;
+        /* height: 5em; */
+        background-color: var(--secondaryColor);
+        /* margin: 0; */
     }
+    #main-div{
+        margin-top: 15vh;
+        /* margin-top: 5em; */
+    }
+    /* ============ About Section ============ */
+    #aboutsec{
+        /* padding-top: 15vh; */
+    }
+
+    /* ============ Project Section ============ */
+    #projectsec{
+        /* padding-top: 15vh; */
+    }
+
+    /* ============ Contact Section ============ */
+    #contactsec{
+        /* padding-top: 15vh; */
+    }
+
+    #sub-aboutsec{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    #sub-aboutsec #one{
+        width: auto;
+        /* padding-right: auto 2rem; */
+    }
+    #sub-aboutsec #two{
+        width: auto;
+        /* padding-left: auto 2rem; */
+    }
+
 }
