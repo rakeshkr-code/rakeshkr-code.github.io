@@ -139,6 +139,81 @@ a{
 
 
 
+@media screen and (max-width: 500px) {
+    /* .main-container {
+        width: 95%;
+    } */
+    .main-nav{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        font-size: 0.7em;
+        height: 15vh;
+        /* height: 5em; */
+        background-color: var(--secondaryColor);
+        /* margin: 0; */
+    }
+    #main-div{
+        margin-top: 15vh;
+        /* margin-top: 5em; */
+    }
+    /* ============ About Section ============ */
+    #aboutsec{
+        /* padding-top: 4em; */
+        border: 1px solid var(--borderColor);
+        margin: auto;
+        padding: 1rem;
+    }
+    #projectsec{
+        /* padding-top: 4em; */
+        border: 1px solid var(--borderColor);
+        margin: auto;
+        padding: 0rem;
+    }
+    #aboutsec{
+        /* padding-top: 15vh; */
+    }
+
+    /* ============ Project Section ============ */
+    #projectsec{
+        /* padding-top: 15vh; */
+    }
+
+    /* ============ Contact Section ============ */
+    #contactsec{
+        /* padding-top: 15vh; */
+    }
+
+    #sub-aboutsec{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    #sub-aboutsec #one{
+        width: auto;
+        /* padding-right: auto 2rem; */
+    }
+    #sub-aboutsec #two{
+        width: auto;
+        /* padding-left: auto 2rem; */
+    }
+
+    .card-body {
+        min-height: 300px;
+        min-width: 300px;
+        /* margin-right: 5px; */
+    }
+    .cards-container{
+        margin: auto;
+        overflow-y:scroll;
+    }
+
+}
+
+
+
+
 /* html, body {
     padding: 0;
     margin: 0;
@@ -224,75 +299,3 @@ h6 {font-size: 16px;}
     grid-area: right-column;
     border: 1px dashed lightcoral;
 } */
-
-@media screen and (max-width: 500px) {
-    /* .main-container {
-        width: 95%;
-    } */
-    .main-nav{
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        font-size: 0.7em;
-        height: 15vh;
-        /* height: 5em; */
-        background-color: var(--secondaryColor);
-        /* margin: 0; */
-    }
-    #main-div{
-        margin-top: 15vh;
-        /* margin-top: 5em; */
-    }
-    /* ============ About Section ============ */
-    #aboutsec{
-        /* padding-top: 4em; */
-        border: 1px solid var(--borderColor);
-        margin: auto;
-        padding: 1rem;
-    }
-    #projectsec{
-        /* padding-top: 4em; */
-        border: 1px solid var(--borderColor);
-        margin: auto;
-        padding: 0rem;
-    }
-    #aboutsec{
-        /* padding-top: 15vh; */
-    }
-
-    /* ============ Project Section ============ */
-    #projectsec{
-        /* padding-top: 15vh; */
-    }
-
-    /* ============ Contact Section ============ */
-    #contactsec{
-        /* padding-top: 15vh; */
-    }
-
-    #sub-aboutsec{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        /* align-items: center; */
-    }
-    #sub-aboutsec #one{
-        width: auto;
-        /* padding-right: auto 2rem; */
-    }
-    #sub-aboutsec #two{
-        width: auto;
-        /* padding-left: auto 2rem; */
-    }
-
-    .card-body {
-        min-height: 300px;
-        min-width: 300px;
-        /* margin-right: 5px; */
-    }
-    .cards-container{
-        margin: auto;
-        overflow-y:scroll;
-    }
-
-}
