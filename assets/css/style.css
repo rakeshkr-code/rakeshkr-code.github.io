@@ -1,0 +1,25 @@
+.profilepic{
+    height: 216px;
+    /* weight: 216px; */
+    border-radius: 50%;
+}
+.logo-img{
+    height: 50px;
+    /* width: 50px; */
+}
+.bg-gold{
+    background-color: #c0aa48;
+    background-image: repeating-linear-gradient(-214deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 0px, transparent 13px);
+    background-size: 9px;
+}
+.tags{
+    background-color: rgb(236, 236, 236);
+    color: maroon;
+    padding: 3px 5px;
+    border: 2px 2px solid black;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn-social{
+    background-color: #297865;/*#1a6e5a;#03634d;*/
+}
