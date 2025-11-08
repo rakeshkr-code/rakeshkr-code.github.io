@@ -2,218 +2,365 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- added from previous -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakesh Kr Mandal</title>
+    <meta name="description" content="Rakesh Kumar Mandal - AI/ML Professional Portfolio">
+    <meta name="author" content="Rakesh Kumar Mandal">
+    <title>Rakesh Kumar Mandal | AI/ML Professional</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100;400;900&family=Sacramento&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-        
-    <!-- Bootstrap CSS JS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-    <!-- CSS Style -->
+    <!-- Typed.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16"></script>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body>
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
-        <a class="navbar-brand" href="#">RKM</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav ms-auto">
-                <li class="navbar-item">
-                    <a class="nav-link" href="#home-section">Home</a>
+    <!-- Navigation -->
+    <!-- <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">RKM</a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
                 </li>
-                <li class="navbar-item">
-                    <a class="nav-link" href="#about-section">About</a>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
                 </li>
-                <li class="navbar-item">
-                    <a class="nav-link" href="#project-section">Project</a>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
                 </li>
-                <!-- <li class="navbar-item">
-                    <a class="nav-link" href="#service">Service</a>
-                </li> -->
-            </ul>
-            <ul class="navbar-nav ms-auto">
-                <li class="navbar-item">
-                    <a class="nav-link" href="#contact-section">Contact Me</a>
+                <li class="nav-item">
+                    <a href="hobbies.html" class="nav-link">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav> -->
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">RKM</a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="hobbies.html" class="nav-link">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
         </div>
     </nav>
 
-    <header class="header dark-color" id="home-section">
-        <div class="content">
-            <h1 class="header-heading">
-                Hey, I am <span class="my-name">Rakesh Kumar Mandal</span>
-            </h1>
-            <h4 class="header-text">
-                I am a Web Developer, Data Science and Machine Learning Practitioner.
-            </h4>
-            <a href="#" class="btn">Hire</a>
-        </div>
-        <div class="header-img-container">
-            <div class="circle shadow"></div>
-            <img src="images/altprofilenewsq.png" alt="" class="header-img">
-        </div>
-    </header>
 
-    <hr>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-greeting">
+                    Hey, I am <span class="hero-name">Rakesh Kumar Mandal</span>
+                </h1>
+                <div class="hero-typing-container">
+                    <span class="hero-typing-prefix">I am </span>
+                    <span id="typed" class="hero-typed"></span>
+                </div>
+                <a href="#contact" class="btn btn-primary">Hire Me</a>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-bg"></div>
+                <img src="images/altprofilenewsq.png" alt="Rakesh Kumar Mandal" class="hero-image">
+                <div class="hero-decoration hero-decoration-1"></div>
+                <div class="hero-decoration hero-decoration-2"></div>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
-    <section class="light-color" id="about-section">
-        <h1 class="about-heading">About Me</h1>
-        <div class="about-container">
-            <!-- About Img Part -->
-            <div class="about-img-container">
-                <img src="images/aboutimg3.png" alt="" class="about-img">
-                <div class="square"></div>
-                <div class="social-links">
-                    <a href="http://" target="_blank"><i class="social-icon bi bi-github"></i></a>
-                    <a href="http://" target="_blank"><i class="social-icon bi bi-linkedin"></i></a>
-                    <a href="http://" target="_blank"><i class="social-icon bi bi-twitter"></i></a>
-                    <a href="http://" target="_blank"><i class="social-icon bi bi-instagram"></i></a>
-                    <a href="http://" target="_blank"><i class="social-icon bi bi-facebook"></i></a>
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate <strong>Data Science and AI/ML practitioner</strong> currently pursuing BS in Data Science & Applications at IIT Madras. 
+                        I specialize in building intelligent systems that solve real-world problems using Machine Learning, Deep Learning, and modern web technologies.
+                    </p>
+                    <p class="about-description">
+                        With a strong foundation in programming and statistics, I've worked on diverse projects ranging from 
+                        recommendation systems to full-stack web applications. I'm particularly interested in Natural Language Processing, 
+                        Computer Vision, and building scalable ML solutions.
+                    </p>
+                    <p class="about-description">
+                        As a freelance developer, I've helped clients transform their ideas into functional applications. 
+                        I believe in writing clean, maintainable code and staying updated with the latest technologies in the rapidly evolving field of AI/ML.
+                    </p>
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                        <a href="#" class="btn btn-secondary"><i class="bi bi-download"></i> Download Resume</a>
+                    </div>
                 </div>
-            </div>
-            <!-- Info Part -->
-            <div class="info">
-                <p class="info-text">I'm a student of BS Data Science & Applications at IIT Madras and also 
-                    freelance Web Developer and ML Practitioner based in West Bengal, India by profession who 
-                    loves to develop attractive FrontEnd and BackEnd with API for web, and build ML model.</p>
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn"><i class="bi bi-download"></i> Resume</a>
-            </div>
-        </div>
-        <!-- Skills Part -->
-        <h2 class="sub-heading">Skills</h2>
-        <div class="skills">
-            <p class="skill-name">HTML</p>
-            <p class="skill-name">CSS</p>
-            <p class="skill-name">JS</p>
-            <p class="skill-name">Bootstrap</p>
-            <p class="skill-name">VueJS</p>
-            <p class="skill-name">Python</p>
-            <p class="skill-name">Python Flask</p>
-            <p class="skill-name">Java</p>
-            <p class="skill-name">PostGreSQL</p>
-            <p class="skill-name">SQLite</p>
-            <p class="skill-name">Git</p>
-            <p class="skill-name">GitHub</p>
-            <p class="skill-name">Excel</p>
-            <p class="skill-name">NumPy</p>
-            <p class="skill-name">Pandas</p>
-            <p class="skill-name">Frontend Development</p>
-            <p class="skill-name">Backend Development</p>
-            <p class="skill-name">Data Visualization</p>
-            <p class="skill-name">Data Analysis</p>
-            <p class="skill-name">Data Science</p>
-            <p class="skill-name">Machine Learning</p>
-            <p class="skill-name">ML Model Building</p>
-        </div>
-        <!-- Timeline -->
-        <h2 class="sub-heading">Education & Experiences</h2>
-        <div class="timeline-container">
-            <div class="card-container">
-                <div class="card">
-                    <h4 class="card-title">2020-2024</h4>
-                    <p class="card-body">BS in Data Science and Applications at IIT Madras</p>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <h4 class="card-title">2020-2024</h4>
-                    <p class="card-body">BS in Data Science and Applications at IIT Madras</p>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <h4 class="card-title">2020-2024</h4>
-                    <p class="card-body">BS in Data Science and Applications at IIT Madras</p>
+                <div class="about-image-container">
+                    <img src="images/aboutimg3.png" alt="About Rakesh" class="about-image">
+                    <div class="about-social-links">
+                        <a href="https://github.com/rakeshkr-code" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <hr>
-
-    <section id="project-section">
-        <h1 class="heading text-center">Projects</h1>
-        <div class="filter">
-            <button class="btn filter-btn active">All</button>
-            <button class="btn filter-btn">Web Dev</button>
-            <button class="btn filter-btn">Frontend</button>
-            <button class="btn filter-btn">Backend</button>
-            <button class="btn filter-btn">Web Scrapping</button>
-            <button class="btn filter-btn">Python</button>
-            <button class="btn filter-btn">Java</button>
-            <button class="btn filter-btn">Data Viz</button>
-            <button class="btn filter-btn">Data Analysis</button>
-            <button class="btn filter-btn">AI/ML</button>
-            <button class="btn filter-btn">NLP</button>
-        </div>
-        <div class="project-container">
-            <!-- <div class="project-card">
-                <div class="project-wrapper">
-                    <div class="project-thumbnail">
-                        <i class="bi bi-x-lg close-btn"></i>
-                        <img src="/images/project-1.png" alt="" class="project-img">
-                        <span class="tags">#HTML #CSS #JavaScript #CSS/JS</span>
-                    </div>
-                    <div class="project-body">
-                        <h1 class="project-name">Project 1</h1>
-                        <p class="project-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Magni assumenda deleniti velit, omnis nulla tenetur, magnam recusandae perspiciatis 
-                            maxime cumque dolor eligendi deserunt asperiores sed animi minima dolorum eaque ab!</p>
-                        <a href="#" class="btn project-active-btn">GitHub</a>
-                        <a href="#" class="btn project-active-btn">Live Demo</a>
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="bi bi-code-slash"></i> Programming Languages
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
                     </div>
                 </div>
-            </div> -->
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="bi bi-robot"></i> AI/ML & Data Science
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Scikit-Learn</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="bi bi-palette"></i> Web Development
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="bi bi-database"></i> Databases & Tools
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Celery</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <hr>
+    <!-- Education & Experience Timeline -->
+    <section class="timeline-section" id="education">
+        <div class="container">
+            <h2 class="section-title">Education & Experience</h2>
+            <div class="timeline">
+                <!-- Education on the left -->
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2025</div>
+                        <h3 class="timeline-title">BS in Data Science and Applications</h3>
+                        <p class="timeline-institution">IIT Madras</p>
+                        <p class="timeline-description">Specialized in Machine Learning, Statistical Analysis, and Data Engineering. Completed multiple projects in predictive modeling and data visualization.</p>
+                    </div>
+                </div>
+
+                <!-- Internship on the right (same time period) -->
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <h3 class="timeline-title">ML Engineering Intern</h3>
+                        <p class="timeline-institution">Tech Startup</p>
+                        <p class="timeline-description">Developed and deployed ML models for customer behavior prediction. Worked on data preprocessing pipelines and model optimization.</p>
+                    </div>
+                </div>
+
+                <!-- Another internship on the left -->
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <h3 class="timeline-title">Full-Stack Developer Intern</h3>
+                        <p class="timeline-institution">Web Development Agency</p>
+                        <p class="timeline-description">Built responsive web applications using Vue.js and Flask. Implemented RESTful APIs and integrated third-party services.</p>
+                    </div>
+                </div>
+
+                <!-- Freelance work on the right -->
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - Present</div>
+                        <h3 class="timeline-title">Freelance ML Practitioner & Developer</h3>
+                        <p class="timeline-institution">Self-Employed</p>
+                        <p class="timeline-description">Developed ML models and web applications for various clients. Specializing in recommendation systems, NLP applications, and full-stack development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+                <button class="filter-btn" data-filter="web-dev">Web Dev</button>
+                <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
-    <section id="contact-section">
-        <h1 class="heading">Contact Me</h1>
-        <div class="form">
-            <form action="mailto:mandalrakesh628@gmail.com" method="get" enctype="text/plain">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingName" name="Name" placeholder="Name">
-                    <label for="floatingName">Name</label>
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Let's Work Together</h3>
+                    <p class="contact-description">I'm available for freelance work, collaboration on AI/ML projects, and web development opportunities. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="bi bi-envelope"></i>
+                            <span>mandalrakesh628@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>West Bengal, India</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/rakeshkr-code" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingEmail" name="Email" placeholder="name@example.com">
-                    <label for="floatingEmail">Email address</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingSubject" name="Subject" placeholder="Subject">
-                    <label for="floatingSubject">Subject</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Leave your message here" id="floatingTextarea2" name="Message/Comment" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Message</label>
-                </div>
-                <div class="btn-div">
-                    <input class="btn contact-btn" type="submit" name="submit" value="Send Mail">
-                    <!-- <button class="btn contact-btn">Send Mail</button> -->
-                </div>
-            </form>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
-    <script src="./js/project.js"></script>
-    <script src="./js/app.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Rakesh Kumar Mandal. All rights reserved.</p>
+        </div>
+    </footer>
 
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Project details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Typed.js Library - FIXED CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- Custom JavaScript - Load in correct order -->
+    <script src="js/projects-data.js"></script>
+    <script src="js/script.js"></script>
+    
 </body>
 </html>
+<!-- 
+</body>
+</html> -->
