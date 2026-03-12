@@ -325,14 +325,16 @@ body {
 }
 
 .about-intro {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
+    font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
     color: var(--color-primary);
 }
 
 .about-description {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
+    font-size: 1.0rem;
     line-height: 1.9;
     margin-bottom: 1.5rem;
     opacity: 0.9;
@@ -424,7 +426,8 @@ body {
 }
 
 .skill-category-title {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
     color: var(--color-primary);
@@ -448,7 +451,8 @@ body {
     background-color: var(--color-card-bg);
     border: 1px solid var(--color-border);
     border-radius: 20px;
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
+    font-size: 0.8rem;
     transition: var(--transition);
     cursor: default;
 }
