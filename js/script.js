@@ -90,11 +90,13 @@ function initTypedAnimation() {
         
         const typed = new Typed('#typed', {
             strings: [
-                'a Data Science Professional',
-                'an AI/ML Practitioner',
-                'a Full-Stack Web Developer',
-                'a Problem Solver',
-                'passionate about Machine Learning'
+                ' a ML Engineer',
+                ' a MLOps practitioner',
+                // ' an AI/ML Practitioner',
+                // ' a Full-Stack Web Developer',
+                ' a Problem Solver',
+                ' a Lifelong Learner',
+                ' a Travelling Enthusiast',
             ],
             typeSpeed: 50,
             backSpeed: 30,
